@@ -1,0 +1,90 @@
+<!DOCTYPE html> 
+<html>
+<head>
+	<title>RM VEÍCULOS</title>
+	<link rel="shortcut icon" type="image-x/png" href="../imagens/ico.ico">
+	<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+	<meta charset="utf-8">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0">
+	<script type="text/javascript" src="../js/conf.js"></script>
+</head>
+
+
+<body>
+	<header style="border-bottom: #eb2d2d solid 3px;">
+		<div class="container">
+			<div class="logo">
+				<a href="../index.html"> <img src="../imagens/logo.jpg"/></a>
+			</div><!--logo-->
+
+			<nav class="desktop">
+				<ul>
+					<li><a href="../index.html">HOME</a></li>
+					<li><a href="venda.html">ESTOQUE</a></li>
+					<li><a href="galeria.html">GALERIA</a></li>
+					<li><a href="eventos.html">EVENTOS</a></li>
+					<li><a href="sobre.html">SOBRE</a></li>
+					<li><a href="contato.html" style="color: #eb2d2d;">CONTATO</a></li>
+				</ul>
+			</nav><!--desktop-->
+
+			<nav class="mobile" onclick="mostrarMenu()">
+				<ul  id="menu-mobile">
+					<li><a href="../index.html">HOME</a></li>
+					<li><a href="venda.html">ESTOQUE</a></li>
+					<li><a href="galeria.html">GALERIA</a></li>
+					<li><a href="eventos.html">EVENTOS</a></li>
+					<li><a href="sobre.html">SOBRE</a></li>
+					<li><a href="contato.html" style="color: #eb2d2d;">CONTATO</a></li>
+				</ul>
+			</nav><!--mobile-->
+			<div class="clear"></div>
+		</div><!--container-->
+	</header>
+
+	<section class="contato">
+		<div class="line-titulo">
+			<div class="line1"></div>
+			<h2>CONTATO</h2>
+		</div><!--line-titulo-->	
+
+		<form>
+			<div class="container">
+				<div class="form-wraper">
+					<span>Nome:</span>
+					<input type="text" name="nome" placeholder="Exemplo: João Carlos" required>
+				</div><!--form-wraper-w100-->
+
+				<div class="form-wraper">
+					<span>E-mail:</span>
+					<input type="text" name="email" required placeholder="exemplo@gmail.com">
+				</div><!--form-wraper-w100-->
+
+				<div class="form-wraper">
+					<span>Telefone:</span>
+					<input type="text" name="telefone" required placeholder="(xx) xxxxx-xxxx">
+				</div><!--form-wraper-w100-->
+
+				<div class="form-wraper">
+					<span>Mensagem:</span>
+					<textarea required placeholder="Escreva sua Mensagem aqui..."></textarea>
+				</div><!--form-wraper-w100-->
+
+				<div class="form-wraper" style="text-align: center;">
+					<input class="btn1" type="submit" name="enviar" value="ENVIAR">
+				</div><!--form-wraper-w100-->
+				<div class="clear"></div> 
+			</div><!--container-->
+		</form>
+		<div class="clear"></div>
+	</section><!--contato-->
+
+	<footer>
+		<h2>©Copyright - Todos os direitos reservados</h2>
+	</footer>
+
+</body>
+</html>

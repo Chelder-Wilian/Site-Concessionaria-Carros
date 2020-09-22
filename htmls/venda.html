@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>RM VEÍCULOS</title>
+	<link rel="shortcut icon" type="image-x/png" href="../imagens/ico.ico">
+	<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+	<meta charset="utf-8">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script type="text/javascript" src="../js/conf.js"></script>
+	<script type="text/javascript" src="../js/confsingle.js"></script>
+	<script type="text/javascript" src="../js/functions.js"></script>
+</head>
+
+
+<body>
+	<header style="border-bottom: #eb2d2d solid 3px;">
+		<div class="container">
+			<div class="logo">
+				<a href="../index.html"> <img src="../imagens/logo.jpg"/></a>
+			</div><!--logo-->
+
+			<nav class="desktop">
+				<ul>
+					<li><a href="../index.html">HOME</a></li>
+					<li><a  style="color: #eb2d2d;" href="venda.html">ESTOQUE</a></li>
+					<li><a href="galeria.html">GALERIA</a></li>
+					<li><a href="eventos.html">EVENTOS</a></li>
+					<li><a href="sobre.html">SOBRE</a></li>
+					<li><a href="contato.html">CONTATO</a></li>
+				</ul>
+			</nav><!--desktop-->
+
+			<nav class="mobile" onclick="mostrarMenu()">
+				<ul  id="menu-mobile">
+					<li><a href="../index.html">HOME</a></li>
+					<li><a  style="color: #eb2d2d;" href="venda.html">ESTOQUE</a></li>
+					<li><a href="galeria.html">GALERIA</a></li>
+					<li><a href="eventos.html">EVENTOS</a></li>
+					<li><a href="sobre.html">SOBRE</a></li>
+					<li><a href="contato.html">CONTATO</a></li>
+				</ul>
+			</nav><!--mobile-->
+			<div class="clear"></div>
+		</div><!--container-->
+	</header>
+
+	<section class="venda">
+		<div class="line-titulo">
+			<div class="line1"></div>
+			<h2>ESTOQUE</h2>
+		</div><!--line-titulo-->	
+
+		<div class="content-venda">
+			<div class="container">
+			<div class="sidebar">
+				<div class="search1">
+					<h2>Filtre por preço</h2>
+					<div class="barra-preco">
+						<div class="barra-preco-fill"></div><!--brarra-preco-fill-->
+						<div class="pointer-barra"></div><!--pointer-fill-->						
+					</div><!--barra-preco-->
+					<div class="valor-pesquisa">
+						<p class="preco_pesquisa">R$0,00</p>
+						<p>R$70.000,00</p>
+						<div class="clear"></div>
+					</div><!--valor-pesquisa-->
+				</div><!--search1-->
+
+				<div class="search2">
+					<h2>Filtre por ano</h2>
+					<form>
+
+					<div class="form-estoque-wraper">
+						<input type="radio" name="ano" id="item1" target="todos" checked >
+						<label for="item1"><span>Todos as décadas</span></label>
+					</div><!---form-estoque-wraper-->
+
+					<div class="form-estoque-wraper">
+						<input type="radio" name="ano" id="1950" target="1959">
+						<label for="1950"><span>1950 - 1959</span></label>
+					</div><!---form-estoque-wraper-->
+
+					<div class="form-estoque-wraper">
+						<input type="radio" name="ano" id="1960" target="1969">
+						<label for="1960"><span>1960 - 1969</span></label>
+					</div><!---form-estoque-wraper-->
+
+					<div class="form-estoque-wraper">
+						<input type="radio" name="ano" id="1970" target="1979">
+						<label for="1970"><span>1970 - 1979</span></label>
+					</div><!---form-estoque-wraper-->
+
+					<div class="form-estoque-wraper">
+						<input type="radio" name="ano" id="1980" target="1989">
+						<label for="1980"><span>1980 - 1989</span></label>
+					</div><!---form-estoque-wraper-->
+
+					<div class="form-estoque-wraper">
+						<input type="radio" name="ano" id="1990" target="1999">
+						<label for="1990"><span>1990 - 1999</span></label>
+					</div><!---form-estoque-wraper-->
+
+					<div class="form-estoque-wraper">
+						<input type="radio" name="ano" id="2000" target="2100">
+						<label for="2000"><span>Acima de 2000</span></label>
+					</div><!---form-estoque-wraper-->
+					</form>
+				</div><!--search2-->
+			</div><!--sidebar-->
+			</div><!--container-->
+		</div><!--content-venda-->
+
+		<div class="vitrine-venda">
+				<div class="vitrine-destaque">
+					<div class="carro-img" style="background-image: url('../imagens/volkswagen1969.jpg');">
+						<div class="detalhes-estoque">
+							<h4 class="h4um">Marca: Volkswagen</h4>
+							<h4 class="h4dois">Modelo: Karmann-ghia</h4>
+							<h4 class="h4tres">Ano: <span class='ano' target='0'>1969</span></h4>
+							<h4 class="h4quatro">Motor: 1.6 8v</h4>
+							<h4 class="h4cinco">Câmbio: Manual</h4>
+							<h4 class="h4seis">Combustível: Gasolina</h4>
+						</div><!--detalhes-->
+					</div><!--carro-img-->
+
+					<div class="info-carro">
+						<h2 class="h2nome">Karmann-Ghia</h2>
+						<p class="preco">Preço: R$23.899,00</p>
+						<button value="0" class="mostrarDetalhesEstoque btn1">Mais Detalhes</button>
+					</div><!--info-carro-->
+				</div><!--vitrine-destaque-->
+
+				<div class="vitrine-destaque">
+					<div class="carro-img" style="background-image: url('../imagens/impala67.jpg');">
+						<div class="detalhes-estoque">
+							<h4 class="h4um">Marca: Chevrolet</h4>
+							<h4 class="h4dois">Modelo: Impala-67</h4>
+							<h4 class="h4tres">Ano: <span class='ano' target='1' >1967</span></h4>
+							<h4 class="h4quatro">Motor: 330 8v</h4>
+							<h4 class="h4cinco">Câmbio: Manual</h4>
+							<h4 class="h4seis">Combustível: Gasolina</h4>
+						</div><!--detalhes-->
+					</div><!--carro-img-->
+					<div class="info-carro">
+						<h2 class="h2nome"> Chevrolet Impala-67</h2>
+						<p class="preco">Preço: R$28.435,80</p>
+						<button value="1" class="btn1 mostrarDetalhesEstoque">Mais Detalhes</button>
+					</div><!--info-carro-->
+				</div><!--vitrine-destaque-->
+
+				<div class="vitrine-destaque">
+					<div class="carro-img" style="background-image: url('../imagens/ferrari.jpg');">
+						<div class="detalhes-estoque">
+							<h4 class="h4um">Marca>: Ferrari</h4>
+							<h4 class="h4dois">Modelo>: Coupé GT-250</h4>
+							<h4 class="h4tres">Ano>: <span class='ano' target='2' >1958</span></h4>
+							<h4 class="h4quatro">Motor>: 1.6 8v</h4>
+							<h4 class="h4cinco">Câmbio>: Manual</h4>
+							<h4 class="h4seis">Combustível>: Gasolina</h4>
+						</div><!--detalhes-->
+					</div><!--carro-img-->
+					<div class="info-carro">
+						<h2 class="h2nome"> Ferrari Coupé GT-250</h2>
+						<p class="preco">Preço: R$19.299,54</p>
+						<button value="2" class="btn1 mostrarDetalhesEstoque">Mais Detalhes</button>
+					</div><!--info-carro-->
+				</div><!--vitrine-destaque-->
+
+				<div class="vitrine-destaque">
+					<div class="carro-img" style="background-image: url('../imagens/puma.JPG');">
+						<div class="detalhes-estoque">
+							<h4 class="h4um">Marca: Puma</h4>
+							<h4 class="h4dois">Modelo: Gts</h4>
+							<h4 class="h4tres">Ano: <span class='ano' target='3'>1967</span></h4>
+							<h4 class="h4quatro">Motor: 1000cc</h4>
+							<h4 class="h4cinco">Câmbio: Manual</h4>
+							<h4 class="h4seis">Combustível: Gasolina</h4>
+						</div><!--detalhes-->
+					</div><!--carro-img-->
+					<div class="info-carro">
+						<h2 class="h2nome"> Puma Gts</h2>
+						<p class="preco">Preço: R$32.588,30</p>
+						<button value="3" class="btn1 mostrarDetalhesEstoque">Mais Detalhes</button>
+					</div><!--info-carro-->
+				</div><!--vitrine-destaque-->
+
+				<div class="vitrine-destaque">
+					<div class="carro-img" style="background-image: url('../imagens/jeep.jpg');">
+						<div class="detalhes-estoque">
+							<h4 class="h4um">Marca: Jeep Wilys</h4>
+							<h4 class="h4dois">Modelo: Militar</h4>
+							<h4 class="h4tres">Ano: <span class='ano' target='4'>1990</span></h4>
+							<h4 class="h4quatro">Motor: 4x4</h4>
+							<h4 class="h4cinco">Câmbio: Manual</h4>
+							<h4 class="h4seis">Combustível: Disel</h4>
+						</div><!--detalhes-->
+					</div><!--carro-img-->
+					<div class="info-carro">
+						<h2 class="h2nome"> Jeep Militar</h2>
+						<p class="preco">Preço: R$20.122,00</p>
+						<button value="4" class="btn1 mostrarDetalhesEstoque">Mais Detalhes</button>
+					</div><!--info-carro-->
+				</div><!--vitrine-destaque-->
+
+				<div class="vitrine-destaque">
+					<div class="carro-img" style="background-image: url('../imagens/caravan2.jpg');">
+						<div class="detalhes-estoque">
+							<h4 class="h4um">Marca: Chevrolet</h4>
+							<h4 class="h4dois">Modelo: Caravan</h4>
+							<h4 class="h4tres">Ano: <span class='ano' target='5'>1988</span></h4>
+							<h4 class="h4quatro">Motor: 171 cv</h4>
+							<h4 class="h4cinco">Câmbio: Manual</h4>
+							<h4 class="h4seis">Combustível: Gasolina</h4>
+						</div><!--detalhes-->
+					</div><!--carro-img-->
+					<div class="info-carro">
+						<h2 class="h2nome"> Chevrolet Caravan</h2>
+						<p class="preco">Preço: R$13.990,25</p>
+						<button value="5" class="btn1 mostrarDetalhesEstoque">Mais Detalhes</button>
+					</div><!--info-carro-->
+				</div><!--vitrine-destaque-->
+
+				<div class="vitrine-destaque">
+					<div class="carro-img" style="background-image: url('../imagens/corolla.jpg');">
+						<div class="detalhes-estoque">
+							<h4 class="h4um">Marca: Toyota</h4>
+							<h4 class="h4dois">Modelo: Corolla</h4>
+							<h4 class="h4tres">Ano: <span class='ano' target='6'>2001</span></h4>
+							<h4 class="h4quatro">Motor: 1.6</h4>
+							<h4 class="h4cinco">Câmbio: Automatico</h4>
+							<h4 class="h4seis">Combustível: Gasolina</h4>
+						</div><!--detalhes-->
+					</div><!--carro-img-->
+					<div class="info-carro">
+						<h2 class="h2nome"> Toyota Corolla</h2>
+						<p class="preco">Preço: R$14.789,98</p>
+						<button value="6" class="btn1 mostrarDetalhesEstoque">Mais Detalhes</button>
+					</div><!--info-carro-->
+				</div><!--vitrine-destaque-->
+
+				<div class="vitrine-destaque">
+					<div class="carro-img" style="background-image: url('../imagens/cadillac.jpg');">
+						<div class="detalhes-estoque">
+							<h4 class="h4um">Marca: Cadillac</h4>
+							<h4 class="h4dois">Modelo: Eudorado</h4>
+							<h4 class="h4tres">Ano: <span class='ano' target='7'>1959</span></h4>
+							<h4 class="h4quatro">Motor: V8</h4>
+							<h4 class="h4cinco">Câmbio: Manual</h4>
+							<h4 class="h4seis">Combustível: Gasolina</h4>
+						</div><!--detalhes-->
+					</div><!--carro-img-->
+					<div class="info-carro">
+						<h2 class="h2nome"> Cadillac Eudorado</h2>
+						<p class="preco">Preço: R$54.127,00</p>
+						<button value="7" class="btn1 mostrarDetalhesEstoque">Mais Detalhes</button>
+					</div><!--info-carro-->
+				</div><!--vitrine-destaque-->
+
+				<div class="vitrine-destaque">
+					<div class="carro-img" style="background-image: url('../imagens/alfa.jpg');">
+						<div class="detalhes-estoque">
+							<h4 class="h4um">Marca: Alfa Romeu</h4>
+							<h4 class="h4dois">Modelo: Luxo</h4>
+							<h4 class="h4tres">Ano: <span class='ano' target='8'>1972</span></h4>
+							<h4 class="h4quatro">Motor: 4cc</h4>
+							<h4 class="h4cinco">Câmbio: Manual</h4>
+							<h4 class="h4seis">Combustível: Gasolina</h4>
+						</div><!--detalhes-->
+					</div><!--carro-img-->
+					<div class="info-carro">
+						<h2 class="h2nome"> Alfa Romeu</h2>
+						<p class="preco">Preço: R$19.349,30</p>
+						<button value="8" class="btn1 mostrarDetalhesEstoque">Mais Detalhes</button>
+					</div><!--info-carro-->
+				</div><!--vitrine-destaque-->
+
+				<div class="vitrine-destaque">
+					<div class="carro-img" style="background-image: url('../imagens/opala.jpg');">
+						<div class="detalhes-estoque">
+							<h4 class="h4um">Marca: Opala</h4>
+							<h4 class="h4dois">Modelo: Comodoro</h4>
+							<h4 class="h4tres">Ano: <span class='ano' target='9'>1977</span></h4>
+							<h4 class="h4quatro">Motor: 1.6 8v</h4>
+							<h4 class="h4cinco">Câmbio: Manual</h4>
+							<h4 class="h4seis">Combustível: Gasolina</h4>
+						</div><!--detalhes-->
+					</div><!--carro-img-->
+					<div class="info-carro">
+						<h2 class="h2nome"> Opala Comodoro</h2>
+						<p class="preco">Preço: R$44.459,00</p>
+						<button value="9" class="btn1 mostrarDetalhesEstoque">Mais Detalhes</button>
+					</div><!--info-carro-->
+				</div><!--vitrine-destaque-->
+
+				<div class="vitrine-destaque">
+					<div class="carro-img" style="background-image: url('../imagens/kombi.jpg');">
+						<div class="detalhes-estoque">
+							<h4 class="h4um">Marca: Volkswagen</h4>
+							<h4 class="h4dois">Modelo: Kombi</h4>
+							<h4 class="h4tres">Ano: <span class='ano' target='10'>1960</span></h4>
+							<h4 class="h4quatro">Motor: 2.0</h4>
+							<h4 class="h4cinco">Câmbio: Manual</h4>
+							<h4 class="h4seis">Combustível: Gasolina</h4>
+						</div><!--detalhes-->
+					</div><!--carro-img-->
+					<div class="info-carro">
+						<h2 class="h2nome"> Volkswagen Kombi</h2>
+						<p class="preco">Preço: R$12.239,50</p>
+						<button value="10" class="btn1 mostrarDetalhesEstoque">Mais Detalhes</button>
+					</div><!--info-carro-->
+				</div><!--vitrine-destaque-->
+
+				<div class="vitrine-destaque">
+					<div class="carro-img" style="background-image: url('../imagens/caravan.webp');">
+						<div class="detalhes-estoque">
+							<h4 class="h4um">Marca: Chevrolet</h4>
+							<h4 class="h4dois">Modelo: Caravan</h4>
+							<h4 class="h4tres">Ano: <span class='ano' target='11'>1988</span></h4>
+							<h4 class="h4quatro">Motor: 1.6 8v</h4>
+							<h4 class="h4cinco">Câmbio: Automatico</h4>
+							<h4 class="h4seis">Combustível: Alcool</h4>
+						</div><!--detalhes-->
+					</div><!--carro-img-->
+					<div class="info-carro">
+						<h2 class="h2nome"> Chevrolet Caravan</h2>
+						<p class="preco">Preço: R$16.899,20</p>
+						<button value="11" class="btn1 mostrarDetalhesEstoque">Mais Detalhes</button>
+					</div><!--info-carro-->
+				</div><!--vitrine-destaque-->
+			</div><!--container-->
+		</div><!--vitrine-venda-->
+		<div class="clear"></div>
+	</section><!--estoque-->
+
+	<section class="bg">
+		<section class="venda-single">
+			<div class="close"><p></p></div>
+			<div id="veiculo-single">
+			</div>
+		</section><!--venda-single-->
+	</section>
+
+	<footer>
+		<h2>©Copyright - Todos os direitos reservados</h2>
+	</footer>
+
+</body>
+</html>

@@ -1,0 +1,218 @@
+<!DOCTYPE html> 
+<html>
+<head>
+	<title>RM VEÍCULOS</title>
+	<link rel="shortcut icon" type="image-x/png" href="imagens/ico.ico">
+	<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<meta charset="utf-8">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script type="text/javascript" src="js/conf.js"></script>
+	<script type="text/javascript" src="js/confsingle.js"></script>
+</head>
+
+
+<body>
+	<header style="border-bottom: #eb2d2d solid 3px;">
+		<div class="container">
+			<div class="logo">
+				<a href="index.html"> <img src="imagens/logo.jpg"/></a>
+			</div><!--logo-->
+
+			<nav class="desktop">
+				<ul>
+					<li><a href="index.html" style="color: #eb2d2d;">HOME</a></li>
+					<li><a href="htmls/venda.html">ESTOQUE</a></li>
+					<li><a href="htmls/galeria.html">GALERIA</a></li>
+					<li><a href="htmls/eventos.html">EVENTOS</a></li>
+					<li><a href="htmls/sobre.html">SOBRE</a></li>
+					<li><a href="htmls/contato.html">CONTATO</a></li>
+				</ul>
+			</nav><!--desktop-->
+
+
+			<nav class="mobile" onclick="mostrarMenu()">
+				<ul  id="menu-mobile">
+					<li><a href="index.html" style="color: #eb2d2d;" ;>HOME</a></li>
+					<li><a href="htmls/venda.html">ESTOQUE</a></li>
+					<li><a href="htmls/galeria.html">GALERIA</a></li>
+					<li><a href="htmls/eventos.html">EVENTOS</a></li>
+					<li><a href="htmls/sobre.html">SOBRE</a></li>
+					<li><a href="htmls/contato.html">CONTATO</a></li>
+				</ul>
+			</nav><!--mobile-->
+			<div class="clear"></div>
+		</div><!--container-->
+	</header>
+
+	<section class="banner">
+		<div class="container">
+			<div class="text-banner">
+				<div class="text-banner-single">@RMVEICULOSESPECIAL.COM</div>
+				<div class="text-banner-single">CONSULTORIA</div>
+				<div class="text-banner-single">COMPRA</div>
+				<div class="text-banner-single">VENDA</div>
+				
+			</div><!--text-banner-->
+			<div class="clear"></div>
+		</div><!--container-->
+	</section><!--banner-->
+
+	<section class="veiculos-destaque">
+		<div class="line-titulo">
+			<div class="line1"></div>
+			<h2>VEÍCULOS EM DESTAQUE</h2>
+		</div><!--line-titulo-->	
+
+		<div class="container">
+			<div class="vitrine-destaque">
+				<div class="carro-img" style="background-image: url('imagens/volkswagen1969.jpg');">
+					<div class="detalhes">
+						<h4 class="h4um">Marca: Volkswagen</h4>
+						<h4 class="h4dois">Modelo: Karmann-ghia</h4>
+						<h4 class="h4tres">Ano: 1969</h4>
+						<h4 class="h4quatro">Motor: 1.6 8v</h4>
+						<h4 class="h4cinco">Câmbio: Manual</h4>
+						<h4 class="h4seis">Combustível: Gasolina</h4>
+					</div><!--detalhes-->
+				</div><!--carro-img-->
+					
+				<div class="info-carro">
+					<h2 class="h2nome">Karmann-Ghia</h2>
+					<p class="preco">Preço: R$23.899,00</p>
+					<button class="mostrarDetalhes btn1" value="0" id="lol">Mais Detalhes</button>
+				</div><!--info-carro-->
+			</div><!--vitrine-destaque-->
+		
+
+			<div class="vitrine-destaque">
+				<div class="carro-img" style="background-image: url('imagens/impala67.jpg');">
+					<div class="detalhes">
+						<h4 class="h4um">Marca: Chevrolet</h4>
+						<h4 class="h4dois ">Modelo: Impala-67</h4>
+						<h4 class="h4tres">Ano: 1967</h4>
+						<h4 class="h4quatro">Motor: 330 8v</h4>
+						<h4 class="h4cinco">Câmbio: Manual</h4>
+						<h4 class="h4seis">Combustível: Gasolina</h4>
+					</div><!--detalhes-->
+				</div><!--carro-img-->
+				<div class="info-carro">
+					<h2 class="h2nome">Chevrolet Impala-67</h2>
+					<p class="preco">Preço: R$28.435,80</p>
+					<button class="mostrarDetalhes btn1" value="1" >Mais Detalhes</button>
+				</div><!--info-carro-->
+			</div><!--vitrine-destaque-->
+
+			<div class="vitrine-destaque">
+				<div class="carro-img" style="background-image: url('imagens/ferrari.jpg');">
+					<div class="detalhes">
+						<h4 class="h4um">Marca: Ferrari</h4>
+						<h4 class="h4dois">Modelo: Coupé GT-250</h4>
+						<h4 class="h4tres">Ano: 1958</h4>
+						<h4 class="h4quatro">Motor: 1.6 8v</h4>
+						<h4 class="h4cinco">Câmbio: Manual</h4>
+						<h4 class="h4seis">Combustível: Gasolina</h4>
+					</div><!--detalhes-->
+				</div><!--carro-img-->
+				<div class="info-carro">
+					<h2 class="h2nome">Ferrari Coupé GT-250</h2>
+					<p class="preco">Preço: R$19.299,54</p>
+					<button class="mostrarDetalhes btn1" value="2">Mais Detalhes</button>
+				</div><!--info-carro-->
+			</div><!--vitrine-destaque-->
+		</div><!--container-->
+		<div class="clear"></div>
+	</section><!--veiculos-destaques-->
+
+
+	<section class="servicos-descricao">
+		<div class="half1">
+			<div class="half1-wraper">
+				<h2>Serviços</h2>
+				<ul>
+					<li>Compra</li>
+					<li>Venda</li>
+					<li>Consignação</li>
+					<li>Consultoria de Veículos</li>
+					<li>Indicação de mecânicos e peças</li>
+				</ul>
+				<a class="btn1" href="htmls/sobre.html">Saiba Mais</a>
+			</div><!--half1-wraper-->
+		</div><!--half1-->		
+
+
+		<div class="half2">
+			<h2>Depoimentos</h2>
+			<div class="depoimento-single">
+				<p>“O Rafael foi muito atencioso, me buscou no aeroporto e garantiu toda comodidade e conforto no almoço, no transfer, na visita ao veículo e durante o test-drive”</p>
+				<div class="nome-depoimento">
+						<p>Gustavo Teixeira - Colecionador</p>
+				</div><!--nome-depoimento-->
+
+			</div><!--depoimento-single-->
+
+			<div class="navigation">
+				<div class="arrows">
+					<img src="imagens/arrowl.png">
+					<img src="imagens/arrowr.png">
+				</div><!--arrows-->
+			</div><!--navigation-->
+		</div><!--half2-->
+		<div class="clear"></div>
+	</section><!--servicos-descricao-->
+
+	<section class="contato">
+		<div class="line-titulo">
+			<div class="line1"></div>
+			<h2>CONTATO</h2>
+		</div><!--line-titulo-->	
+
+		<form>
+			<div class="container">
+				<div class="form-wraper">
+					<span>Nome:</span>
+					<input type="text" name="nome" placeholder="Exemplo: João Carlos" required>
+				</div><!--form-wraper-w100-->
+
+				<div class="form-wraper">
+					<span>E-mail:</span>
+					<input type="text" name="email" required placeholder="exemplo@gmail.com">
+				</div><!--form-wraper-w100-->
+
+				<div class="form-wraper">
+					<span>Telefone:</span>
+					<input type="text" name="telefone" required placeholder="(xx) xxxxx-xxxx">
+				</div><!--form-wraper-w100-->
+
+				<div class="form-wraper">
+					<span>Mensagem:</span>
+					<textarea required placeholder="Escreva sua Mensagem aqui..."></textarea>
+				</div><!--form-wraper-w100-->
+
+				<div class="form-wraper" style="text-align: center;">
+					<input class="btn1" type="submit" name="enviar" value="ENVIAR">
+				</div><!--form-wraper-w100-->
+				<div class="clear"></div> 
+			</div><!--container-->
+		</form>
+		<div class="clear"></div>
+	</section><!--contato-->
+
+	<section class="bg">
+		<section class="venda-single">
+			<div class="close"></div>
+			<div id="veiculo-single">
+				
+			</div>
+		</section><!--venda-single-->
+	</section>
+		
+	<footer>
+		<h2>©Copyright - Todos os direitos reservados</h2>
+	</footer>
+
+</body>
+</html>
